@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio | Andre Pratama</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>Andre Pratama<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="hero-container">
+      <div class="hero-content">
+        <p class="hero-greeting">Halo, saya</p>
+        <h1 class="hero-name">Andre Pratama</h1>
+        <div class="hero-roles">
+          <span class="role-static">Seorang </span>
+          <span class="role-dynamic" id="role-dynamic"></span>
+          <span class="cursor">|</span>
+        </div>
+        <p class="hero-desc">
+          Mahasiswa yang passionate di bidang <strong>Machine Learning</strong>,
+          <strong>Web Development</strong>, dan <strong>Data Science</strong>.
+          Selalu antusias belajar hal baru dan membangun solusi nyata.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fas fa-rocket"></i> Lihat Proyek
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="fas fa-paper-plane"></i> Hubungi Saya
+          </a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="mailto:andrepratama@email.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="avatar-wrapper">
+          <div class="avatar-ring"></div>
+          <div class="avatar-placeholder">
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="floating-badge badge-1"><i class="fas fa-code"></i> Dev</div>
+          <div class="floating-badge badge-2"><i class="fas fa-brain"></i> ML</div>
+          <div class="floating-badge badge-3"><i class="fas fa-chart-bar"></i> Data</div>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-indicator" aria-label="Scroll ke bawah">
+      <i class="fas fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Tentang Saya</p>
+        <h2 class="section-title">Siapa Saya?</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Saya adalah seorang mahasiswa <strong>Teknik Informatika</strong> yang memiliki minat kuat
+            di bidang kecerdasan buatan, pengembangan web modern, dan analisis data.
+          </p>
+          <p>
+            Saat ini saya sedang mengeksplorasi dunia <strong>Web Development</strong> dan
+            membangun berbagai proyek untuk mengasah kemampuan saya. Saya juga aktif berkontribusi
+            dalam komunitas teknologi di kampus.
+          </p>
+          <div class="about-info">
+            <div class="info-item">
+              <i class="fas fa-graduation-cap"></i>
+              <div>
+                <span class="info-label">Pendidikan</span>
+                <span class="info-value">S1 Teknik Informatika</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <span class="info-label">Lokasi</span>
+                <span class="info-value">Indonesia</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-briefcase"></i>
+              <div>
+                <span class="info-label">Status</span>
+                <span class="info-value">Open to Work</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-language"></i>
+              <div>
+                <span class="info-label">Bahasa</span>
+                <span class="info-value">Indonesia, English</span>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="btn btn-primary">
+            <i class="fas fa-download"></i> Download CV
+          </a>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-number" data-target="10">0</span>
+            <span class="stat-label">Proyek Selesai</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="5">0</span>
+            <span class="stat-label">Sertifikasi</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="3">0</span>
+            <span class="stat-label">Tahun Belajar</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="100">0</span>
+            <span class="stat-label">Jam Coding/Bulan</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Kemampuan</p>
+        <h2 class="section-title">Tech Stack</h2>
+      </div>
+      <div class="skills-tabs">
+        <button class="tab-btn active" data-tab="frontend">Frontend</button>
+        <button class="tab-btn" data-tab="backend">Backend &amp; Data</button>
+        <button class="tab-btn" data-tab="tools">Tools</button>
+      </div>
+      <div class="tab-content active" id="tab-frontend">
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon" style="background:#e34f26;"><i class="fab fa-html5"></i></div>
+            <h4>HTML5</h4>
+            <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            <span>90%</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon" style="background:#264de4;"><i class="fab fa-css3-alt"></i></div>
+            <h4>CSS3</h4>
+            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            <span>85%</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon" style="background:#f7df1e;color:#000;"><i class="fab fa-js"></i></div>
+            <h4>JavaScript</h4>
+            <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            <span>80%</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon" style="background:#61dafb;color:#000;"><i class="fab fa-react"></i></div>
+            <h4>React</h4>
+            <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+            <span>70%</span>
+          </div>
+        </div>
+      </div>
+      <div class="tab-content" id="tab-backend">
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon" style="background:#3572A5;"><i class="fab fa-python"></i></div>
+            <h4>Python</h4>
+            <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+            <span>88%</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon" style="background:#ff6f00;"><i class="fas fa-brain"></i></div>
+            <h4>Machine Learning</h4>
+            <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+            <span>75%</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon" style="background:#4479a1;"><i class="fas fa-database"></i></div>
+            <h4>SQL / MySQL</h4>
+            <div class="skill-bar"><div class="skill-fill" data-width="72"></div></div>
+            <span>72%</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon" style="background:#013243;"><i class="fas fa-chart-line"></i></div>
+            <h4>Data Science</h4>
+            <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+            <span>78%</span>
+          </div>
+        </div>
+      </div>
+      <div class="tab-content" id="tab-tools">
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon" style="background:#f05032;"><i class="fab fa-git-alt"></i></div>
+            <h4>Git / GitHub</h4>
+            <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+            <span>82%</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon" style="background:#2496ed;"><i class="fab fa-docker"></i></div>
+            <h4>Docker</h4>
+            <div class="skill-bar"><div class="skill-fill" data-width="55"></div></div>
+            <span>55%</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon" style="background:#007acc;"><i class="fas fa-code"></i></div>
+            <h4>VS Code</h4>
+            <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            <span>90%</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon" style="background:#ff9900;"><i class="fas fa-cloud"></i></div>
+            <h4>Cloud (AWS)</h4>
+            <div class="skill-bar"><div class="skill-fill" data-width="50"></div></div>
+            <span>50%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Portofolio</p>
+        <h2 class="section-title">Proyek Unggulan</h2>
+      </div>
+      <div class="projects-filter">
+        <button class="filter-btn active" data-filter="all">Semua</button>
+        <button class="filter-btn" data-filter="ml">Machine Learning</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="data">Data Science</button>
+      </div>
+      <div class="projects-grid" id="projects-grid">
+        <div class="project-card" data-category="ml">
+          <div class="project-img">
+            <div class="project-img-placeholder" style="background:linear-gradient(135deg,#6366f1,#8b5cf6);"><i class="fas fa-brain"></i></div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" aria-label="Demo"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span class="tag">Python</span><span class="tag">Scikit-learn</span><span class="tag">Pandas</span></div>
+            <h3>Klasifikasi Iris Flower</h3>
+            <p>Implementasi klasifikasi bunga iris menggunakan berbagai algoritma ML (KNN, SVM, Decision Tree) dengan visualisasi lengkap.</p>
+            <div class="project-meta"><span><i class="fas fa-star"></i> 95% Akurasi</span><span class="tag-cat">ML</span></div>
+          </div>
+        </div>
+        <div class="project-card" data-category="web">
+          <div class="project-img">
+            <div class="project-img-placeholder" style="background:linear-gradient(135deg,#667eea,#764ba2);"><i class="fas fa-globe"></i></div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" aria-label="Demo"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+            <h3>Landing Page Portofolio</h3>
+            <p>Web portofolio responsif dengan animasi smooth dan desain modern menggunakan pure HTML, CSS, JavaScript.</p>
+            <div class="project-meta"><span><i class="fas fa-star"></i> Responsif</span><span class="tag-cat">Web</span></div>
+          </div>
+        </div>
+        <div class="project-card" data-category="data">
+          <div class="project-img">
+            <div class="project-img-placeholder" style="background:linear-gradient(135deg,#f093fb,#f5576c);"><i class="fas fa-chart-bar"></i></div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" aria-label="Demo"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span class="tag">Python</span><span class="tag">Matplotlib</span><span class="tag">Seaborn</span></div>
+            <h3>Analisis Data Penjualan</h3>
+            <p>Eksplorasi dan visualisasi data penjualan e-commerce untuk menemukan pola, tren, dan insight bisnis.</p>
+            <div class="project-meta"><span><i class="fas fa-star"></i> EDA</span><span class="tag-cat">Data</span></div>
+          </div>
+        </div>
+        <div class="project-card" data-category="ml">
+          <div class="project-img">
+            <div class="project-img-placeholder" style="background:linear-gradient(135deg,#4facfe,#00f2fe);"><i class="fas fa-robot"></i></div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" aria-label="Demo"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span class="tag">Python</span><span class="tag">TensorFlow</span><span class="tag">Keras</span></div>
+            <h3>Image Classification CNN</h3>
+            <p>Model deep learning untuk klasifikasi gambar menggunakan CNN dengan arsitektur custom dan transfer learning.</p>
+            <div class="project-meta"><span><i class="fas fa-star"></i> Deep Learning</span><span class="tag-cat">ML</span></div>
+          </div>
+        </div>
+        <div class="project-card" data-category="web">
+          <div class="project-img">
+            <div class="project-img-placeholder" style="background:linear-gradient(135deg,#43e97b,#38f9d7);"><i class="fas fa-shopping-cart"></i></div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" aria-label="Demo"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span class="tag">React</span><span class="tag">Node.js</span><span class="tag">MySQL</span></div>
+            <h3>E-Commerce App</h3>
+            <p>Aplikasi toko online full-stack dengan fitur autentikasi, keranjang belanja, manajemen produk, dan dashboard admin.</p>
+            <div class="project-meta"><span><i class="fas fa-star"></i> Full Stack</span><span class="tag-cat">Web</span></div>
+          </div>
+        </div>
+        <div class="project-card" data-category="data">
+          <div class="project-img">
+            <div class="project-img-placeholder" style="background:linear-gradient(135deg,#fa709a,#fee140);"><i class="fas fa-poll"></i></div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" aria-label="Demo"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span class="tag">Python</span><span class="tag">NLTK</span><span class="tag">WordCloud</span></div>
+            <h3>Sentiment Analysis</h3>
+            <p>Analisis sentimen ulasan produk menggunakan NLP untuk mengklasifikasikan opini positif, negatif, dan netral.</p>
+            <div class="project-meta"><span><i class="fas fa-star"></i> NLP</span><span class="tag-cat">Data</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Perjalanan</p>
+        <h2 class="section-title">Pengalaman &amp; Pendidikan</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <span class="timeline-date"><i class="fas fa-calendar-alt"></i> 2023 - Sekarang</span>
+              <span class="timeline-type edu"><i class="fas fa-graduation-cap"></i> Pendidikan</span>
+            </div>
+            <h3>S1 Teknik Informatika</h3>
+            <h4>Universitas Indonesia</h4>
+            <p>Konsentrasi Kecerdasan Buatan. Aktif dalam UKM Programming dan tim riset Machine Learning kampus.</p>
+            <div class="timeline-tags"><span>GPA 3.8/4.0</span><span>Dean's List</span></div>
+          </div>
+        </div>
+        <div class="timeline-item right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <span class="timeline-date"><i class="fas fa-calendar-alt"></i> Jul - Sep 2025</span>
+              <span class="timeline-type work"><i class="fas fa-briefcase"></i> Magang</span>
+            </div>
+            <h3>Data Analyst Intern</h3>
+            <h4>PT. Teknologi Maju</h4>
+            <p>Membantu tim data dalam analisis perilaku pengguna, pembuatan dashboard, dan otomasi laporan.</p>
+            <div class="timeline-tags"><span>Python</span><span>SQL</span><span>Tableau</span></div>
+          </div>
+        </div>
+        <div class="timeline-item left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <span class="timeline-date"><i class="fas fa-calendar-alt"></i> Jan - Jun 2025</span>
+              <span class="timeline-type work"><i class="fas fa-briefcase"></i> Freelance</span>
+            </div>
+            <h3>Web Developer Freelance</h3>
+            <h4>Berbagai Klien</h4>
+            <p>Membangun website company profile, landing page, dan toko online untuk berbagai UMKM dan startup lokal.</p>
+            <div class="timeline-tags"><span>HTML/CSS</span><span>JavaScript</span><span>React</span></div>
+          </div>
+        </div>
+        <div class="timeline-item right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <span class="timeline-date"><i class="fas fa-calendar-alt"></i> 2024</span>
+              <span class="timeline-type cert"><i class="fas fa-certificate"></i> Sertifikasi</span>
+            </div>
+            <h3>Machine Learning Specialization</h3>
+            <h4>Coursera - DeepLearning.AI</h4>
+            <p>Menyelesaikan kursus ML lengkap mencakup supervised, unsupervised, dan reinforcement learning.</p>
+            <div class="timeline-tags"><span>ML</span><span>TensorFlow</span><span>Andrew Ng</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Kontak</p>
+        <h2 class="section-title">Mari Berkolaborasi</h2>
+        <p class="section-desc">Punya proyek menarik atau ingin berdiskusi? Jangan ragu untuk menghubungi saya!</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-card">
+            <i class="fas fa-envelope"></i>
+            <div><h4>Email</h4><a href="mailto:andrepratama@email.com">andrepratama@email.com</a></div>
+          </div>
+          <div class="contact-card">
+            <i class="fab fa-linkedin-in"></i>
+            <div><h4>LinkedIn</h4><a href="https://linkedin.com" target="_blank" rel="noopener">linkedin.com/in/andrepratama</a></div>
+          </div>
+          <div class="contact-card">
+            <i class="fab fa-github"></i>
+            <div><h4>GitHub</h4><a href="https://github.com" target="_blank" rel="noopener">github.com/andrepratama</a></div>
+          </div>
+          <div class="contact-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <div><h4>Lokasi</h4><span>Indonesia</span></div>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Nama Lengkap</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required autocomplete="name" />
+              <span class="form-error" id="name-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="john@email.com" required autocomplete="email" />
+              <span class="form-error" id="email-error"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subjek</label>
+            <input type="text" id="subject" name="subject" placeholder="Kolaborasi Proyek" required />
+            <span class="form-error" id="subject-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="message">Pesan</label>
+            <textarea id="message" name="message" rows="5" placeholder="Ceritakan ide atau proyek Anda..." required></textarea>
+            <span class="form-error" id="message-error"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+            <i class="fas fa-paper-plane"></i> <span>Kirim Pesan</span>
+          </button>
+          <div class="form-success" id="form-success">
+            <i class="fas fa-check-circle"></i> Pesan berhasil dikirim! Saya akan segera menghubungi Anda.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo">
+            <span class="logo-bracket">&lt;</span>Andre Pratama<span class="logo-bracket">/&gt;</span>
+          </a>
+          <p>Membangun solusi digital yang bermakna, satu baris kode pada satu waktu.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navigasi</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-socials">
+          <h4>Sosial Media</h4>
+          <div class="social-links">
+            <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:andrepratama@email.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>2026 Andre Pratama. Dibuat dengan HTML, CSS &amp; JS.</p>
+        <a href="#home" class="back-to-top" aria-label="Kembali ke atas"><i class="fas fa-arrow-up"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
